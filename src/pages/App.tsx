@@ -1,13 +1,34 @@
-import React from 'react';
+import React, {
+} from 'react';
 
 import {
-  FullPageContainer
+  InputGrid
+} from '../components/InputGrid';
+
+import {
+  FullPageContainer,
+  BorderRadiusPreview,
+  ContentContainer,
+  InputLabel,
 } from './style';
+
 
 const App: React.FC = () => {
   return (
    <FullPageContainer>
-      Border Radius Preview
+     
+     <ContentContainer>
+        <InputLabel>
+          Border Radius Preview
+        </InputLabel>
+        
+        <InputGrid />
+
+        <BorderRadiusPreview 
+          id="border-radius-preview"
+        />
+     </ContentContainer>
+     
    </FullPageContainer>
   );
 }
